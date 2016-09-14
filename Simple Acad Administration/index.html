@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+       
+    
+  </head>
+
+  <body>
+
+    
+      <p>The assignment includes:</p>
+      <ol >
+        <li ><h3><a href="index.html">Sign Up</a></h3></li>
+        <li ><h3><a href="first.html">Log In</a></h3></li>
+      </ol>
+      <br/><br/>
+	  <form action="register.php" method="post" enctype="multipart/form-data">
+	  <fieldset >
+	  <legend><b>Sign Up Form</b></legend>
+			<p><label>First Name<span >*</span></label>
+              <input type="text" name="firstname" required autocomplete="off" /></p>
+			<p><label>Last Name<span >*</span>
+              </label> <input type="text" name="lastname" required autocomplete="off"/></p>
+			<p><label>Gender<span >*</span>
+              </label>
+				<input type="radio" name="gender" value="male"  /> Male
+				<input type="radio" name="gender" value="female" /> Female
+				<input type="radio" name="gender" value="other" /> Other</p>
+			<p><label>Course Code required:
+              </label>
+				<input type="checkbox" name="code[]" value="CMPE239"  /> CMPE239
+				<input type="checkbox" name="code[]" value="CMPE280" /> CMPE280
+				<input type="checkbox" name="code[]" value="CMPE283" /> CMPE283</p>
+			<p><label>Course<span  >* </span>
+            </label>
+            <select name="select" ><option name="option" value="CMPE 226: Database Systems" > CMPE 226: Database Systems</option>
+			<option name="option" value="CMPE/SE 131 Software Engineering"> CMPE/SE 131 Software Engineering</option>
+			<option name="option" value="CMPE/SE 180-92: Data Structures and Algorithms"> CMPE/SE 180-92: Data Structures and Algorithms</option>
+			</select></p>
+			<p><label> Email Address<span >*</span>
+            </label><input type="email" name="email" required autocomplete="off"/></p>
+			<p><label>  Set A Password<span >*</span>
+            </label><input type="password" name="password" required autocomplete="off"/></p>
+			<p><label>File: </label>
+            <input type="file" enctype="multipart/form-data" name="image" /></p>
+			<p><label>
+              User: </label>
+			<input type="radio" name="user" value="student"  /> Student
+			<input type="radio" name="user" value="teacher" /> Teacher</p>
+			<button type="submit" />Get Started</button>
+	  </fieldset>
+	  </form>
+	  
+	  
+	  
+    
+    
+  </body>
+</html>
